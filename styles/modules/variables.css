@@ -1,0 +1,16 @@
+:root {
+  --primary: #3f497f;
+  --secondary: #f7c04a;
+
+  --black: #000000;
+  --white: #ffffff;
+
+  --dark: #282a3a;
+  --light: #f6f1f1;
+  --light-t: rgba(246, 241, 241, 0.2);
+
+  --c-gray-90: #c9c9c9;
+  --c-gray-60: #6e6e6e;
+
+  --font-IBM: "IBM Plex Mono", monospace;
+}

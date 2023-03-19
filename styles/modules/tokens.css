@@ -1,0 +1,30 @@
+.token {
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.token.property {
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.token.property + .token.punctuation {
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.token.punctuation {
+  color: var(--dark);
+}
+
+.token.value {
+  color: var(--c-gray-60);
+}
+
+.token.property + .token.punctuation {
+  margin-inline-end: 0.75rem;
+}
+
+br + .token {
+  margin-block-start: 0.75rem;
+}

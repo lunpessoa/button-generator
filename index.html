@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Button Creator</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <script type="module" src="scripts/index.js" defer></script>
+  </head>
+  <body>
+    <main class="button-creator">
+      <section class="form">
+        <form id="controls" name="controls">
+          <div class="field">
+            <label for="text">text</label>
+            <input type="text" name="text" id="text" />
+          </div>
+
+          <div class="field">
+            <label for="color">color</label>
+            <input type="color" name="color" id="color" />
+          </div>
+
+          <div class="field">
+            <label for="backgroundColor">background-color</label>
+            <input type="color" name="backgroundColor" id="backgroundColor" />
+          </div>
+
+          <div class="field">
+            <label for="height">height</label>
+            <input
+              type="range"
+              name="height"
+              id="height"
+              value="0"
+              min="0"
+              max="200"
+            />
+          </div>
+
+          <div class="field">
+            <label for="width">width</label>
+            <input
+              type="range"
+              name="width"
+              id="width"
+              value="0"
+              min="0"
+              max="600"
+            />
+          </div>
+
+          <div class="field">
+            <label for="padding">padding</label>
+            <input
+              type="range"
+              name="padding"
+              id="padding"
+              value="0"
+              min="0"
+              max="200"
+            />
+          </div>
+
+          <div class="field">
+            <label for="borderSize">border-size</label>
+            <input type="text" name="borderSize" id="borderSize" />
+          </div>
+
+          <div class="field">
+            <label for="borderStyle">border-style</label>
+            <select name="borderStyle" id="borderStyle">
+              <option value="unset">unset</option>
+              <option value="dotted">dotted</option>
+              <option value="dashed">dashed</option>
+              <option value="solid">solid</option>
+              <option value="double">double</option>
+              <option value="groove">groove</option>
+              <option value="ridge">ridge</option>
+              <option value="inset">inset</option>
+              <option value="outset">outset</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="borderColor">border-color</label>
+            <input type="color" name="borderColor" id="borderColor" />
+          </div>
+
+          <div class="field">
+            <label for="borderRadius">border-radius</label>
+            <input
+              type="range"
+              name="borderRadius"
+              id="borderRadius"
+              value="0"
+              min="0"
+              max="100"
+            />
+          </div>
+
+          <div class="field">
+            <label for="fontFamily">font-family</label>
+            <select name="fontFamily" id="fontFamily">
+              <option value="Arial">Arial</option>
+              <option value="Georgia">Georgia</option>
+              <option value="monospace">Monospace</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="fontSize">font-size</label>
+            <input type="text" name="fontSize" id="fontSize" />
+          </div>
+        </form>
+      </section>
+
+      <section class="result">
+        <div class="button-container">
+          <button class="clear">clear</button>
+          <button class="btn">Clique</button>
+        </div>
+        <div class="css-container">
+          <div class="css-scroll">
+            <button class="copy">copy</button>
+            <code class="css"></code>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

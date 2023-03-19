@@ -1,0 +1,179 @@
+body {
+  background: linear-gradient(
+      135deg,
+      var(--dark) 21px,
+      #d9ecff 22px,
+      #d9ecff 24px,
+      transparent 24px,
+      transparent 67px,
+      #d9ecff 67px,
+      #d9ecff 69px,
+      transparent 69px
+    ),
+    linear-gradient(
+        225deg,
+        var(--dark) 21px,
+        #d9ecff 22px,
+        #d9ecff 24px,
+        transparent 24px,
+        transparent 67px,
+        #d9ecff 67px,
+        #d9ecff 69px,
+        transparent 69px
+      )
+      0 64px;
+  background-color: var(--dark);
+  background-size: 64px 128px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  padding: 0.75rem;
+
+  background-color: var(--light);
+  border-radius: 0.25rem;
+}
+
+.field label {
+  font-family: var(--font-IBM);
+  font-weight: bold;
+  color: var(--c-gray-60);
+}
+
+.button-creator {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 1.875rem;
+
+  padding: 1.875rem;
+  margin-inline: auto;
+
+  max-width: 1200px;
+  height: 100vh;
+}
+
+.form {
+  padding: 1.5rem;
+
+  background: var(--light-t);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+}
+
+.form #controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  height: calc(100vh - 100px);
+
+  overflow-y: auto;
+
+  font-family: var(--font-IBM);
+  font-size: 0.875rem;
+}
+
+.button-container {
+  position: relative;
+  display: grid;
+  place-items: center;
+
+  overflow: hidden;
+
+  background: var(--light-t);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+}
+
+.result {
+  display: grid;
+  grid-template-rows: 1fr 300px;
+  gap: 1.875rem;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.css-container {
+  padding: 1.5rem;
+
+  background: var(--light-t);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+}
+
+.css-scroll {
+  position: relative;
+  display: flex;
+  max-height: calc(300px - 48px);
+
+  overflow-y: auto;
+}
+
+.css {
+  width: 100%;
+  height: 100%;
+  min-height: 252px;
+  font-family: var(--font-IBM);
+
+  padding: 1rem;
+
+  background-color: var(--light);
+  border-radius: 0.25rem;
+}
+
+.clear {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+
+  padding: 0.25rem 0.75rem;
+
+  font-family: var(--font-IBM);
+  font-size: 1rem;
+  color: var(--primary);
+
+  background-color: var(--light);
+  border-radius: 0.25rem;
+
+  cursor: pointer;
+
+  transition: font-weight 100ms ease-in-out, color 100ms ease-in-out,
+    background-color 100ms ease-in-out;
+}
+
+.clear:hover {
+  font-weight: bold;
+  color: var(--dark);
+  background-color: var(--secondary);
+}
+
+.copy {
+  position: fixed;
+  right: 50px;
+  top: 30px;
+
+  font-family: var(--font-IBM);
+  font-size: 1rem;
+  color: var(--primary);
+
+  background: transparent;
+
+  cursor: pointer;
+  z-index: 10;
+
+  transition: font-weight 100ms ease-in-out, color 100ms ease-in-out,
+    background-color 100ms ease-in-out;
+}
+
+.copy:hover {
+  font-weight: bold;
+  color: var(--secondary);
+}

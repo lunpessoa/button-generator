@@ -1,0 +1,61 @@
+input[type="text"] {
+  padding: 0.5rem 0.375rem;
+  height: 2.25rem;
+
+  font-size: 0.875rem;
+  font-family: var(--font-IBM);
+  color: var(--dark);
+  line-height: 1.42857;
+  caret-color: var(--secondary);
+
+  background-color: var(--light);
+  border: 2px solid var(--c-gray-90);
+  border-radius: 0.1875rem;
+
+  cursor: text;
+
+  transition: border-color 200ms ease-in-out;
+}
+
+input[type="range"] {
+  accent-color: var(--secondary);
+  background-color: var(--light);
+}
+
+input[type="color"] {
+  width: 100%;
+  background-color: var(--light);
+  border: 2px solid var(--c-gray-90);
+}
+
+:is(input[type="text"], input[type="color"]):hover {
+  border-color: var(--secondary);
+}
+
+:is(input[type="text"], input[type="color"]):focus {
+  border-color: var(--secondary);
+}
+
+select {
+  background-color: var(--light);
+  border: 2px solid var(--c-gray-90);
+  border-radius: 3px;
+
+  font-size: 0.875rem;
+  font-family: var(--font-IBM);
+  color: var(--dark);
+
+  line-height: 1.42857;
+  padding: 8px 6px;
+  height: 36px;
+
+  transition: border-color 200ms ease-in-out;
+}
+
+select:hover {
+  border-color: var(--secondary);
+}
+
+select:focus {
+  border-color: var(--secondary);
+}
