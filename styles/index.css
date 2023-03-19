@@ -5,3 +5,15 @@
 @import "modules/default.css";
 @import "modules/inputs.css";
 @import "modules/tokens.css";
+
+.button {
+  color: rgb(255, 255, 255);
+  background-color: rgb(25, 165, 200);
+  padding-inline: 67.5px;
+  padding-block: 27px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+  border-radius: 100px;
+  font-family: monospace;
+  font-size: 2rem;
+}

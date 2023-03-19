@@ -12,6 +12,7 @@ export default function initProperties() {
   clearBtn.addEventListener("click", () => {
     localStorage.clear();
     button.style = "";
+    button.innerText = "Click";
     showCSS();
     checkCssScroll();
   });
